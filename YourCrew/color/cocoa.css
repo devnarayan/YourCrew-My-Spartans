@@ -1,0 +1,243 @@
+/*
+Blue accent color
+
+*/
+a:hover {
+	color:#d6c05d;
+}
+#inner-headline ul.breadcrumb li a {
+	color:#d6c05d;
+}
+
+/* heading */
+h1 span.colored, h2 span.colored,h3 span.colored,h4 span.colored,h5 span.colored,h6 span.colored {
+	color:#d6c05d;
+}
+
+/* menu */
+.navbar nav ul.nav li.dropdown ul.dropdown-menu li a:active,.navbar nav ul.nav li.dropdown ul.dropdown-menu li a:focus {
+  background: #d6c05d;
+}
+ul.topmenu li a:hover {
+	color:#d6c05d;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  background: #d6c05d;
+}
+
+header ul.nav .dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a, 
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:hover {
+  background: #d6c05d;
+}
+
+/* slider */
+.camera_prev > span:before {
+  background: #d6c05d;
+}
+.camera_next > span:before {
+  background: #d6c05d;
+}
+
+/* parallax c slider */
+.da-arrows span.da-arrows-prev:before {
+  background: #d6c05d;
+}
+.da-arrows span.da-arrows-next:before {
+  background: #d6c05d;
+}
+.da-slide .da-link:hover{
+	background: #d6c05d;
+	border: 4px solid #d6c05d;
+}
+
+.da-dots span{
+	background: #d6c05d;
+}
+
+
+/* form */
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: #d6c05d;
+}
+
+form#contactform .validation {
+	color:#d6c05d;
+}
+#sendmessage {
+	border:1px solid #d6c05d;
+
+}
+
+/* tabs */
+div.tabs  ul.nav-tabs li.active a {
+	border-top: 2px solid #d6c05d;
+	color:#d6c05d;
+}
+div.tabbable.tabs-left  ul.nav-tabs li.active a {
+	border-left: 2px solid #d6c05d;
+		color:#d6c05d;
+}
+div.tabbable.tabs-right  ul.nav-tabs li.active a {
+	border-right: 2px solid #d6c05d;
+		color:#d6c05d;
+}
+
+.accordion-heading a.active,.accordion-heading a.active i {
+	color:#d6c05d;
+}
+
+/* icon */
+[class^="icon-"].active {
+	color:#d6c05d;
+}
+
+a i.icon-bglight:hover,
+a i.icon-bgdark:hover {
+  background: #d6c05d;
+}
+i.icon-bglight.active {
+  background: #d6c05d;
+}
+
+i.icon-bgdark.active {
+  background: #d6c05d;
+}
+ul.styledlist li:before {
+	color:#d6c05d;
+}
+
+/* logo icon */
+.logo h1 [class^="icon-"] {
+	color:#d6c05d;
+}
+
+.footer_logo h3 [class^="icon-"] {
+	color:#d6c05d;
+}
+
+/* CTA */
+.cta-text h2 span {
+	color:#d6c05d;
+}
+
+/*-- button -- */
+.btn-theme {
+  border:1px solid #d6c05d;
+  background: #d6c05d;
+}
+
+/* content */
+.box:hover .text h4 {
+	color:#d6c05d;
+}
+#inner-headline ul.breadcrumb li a:hover {
+	color:#d6c05d;
+}
+
+a.thumbnail:hover,
+a.thumbnail:focus {
+  border-color: #d6c05d;
+}
+
+/* blog */
+article .post-heading h3 a {
+	text-decoration:none;
+	color:#d6c05d;
+}
+
+.post-entry a.readmore:hover {
+	color:#d6c05d;
+}
+
+ul.cat li a:hover, ul.folio-detail li a:hover {
+	color:#d6c05d;
+}
+
+.meta-post a,.meta-post ul li i {
+  color: #d6c05d;
+}
+
+
+.meta-bottom li a:hover {
+	color:#d6c05d;
+}
+
+#pagination a:hover {
+  background: #d6c05d;
+}
+
+
+/* widgets */
+ul.popular li a {
+	color:#d6c05d;
+}
+
+/* component */
+.pagination ul > .active > a,
+.pagination ul > .active > span {
+  background: #d6c05d;
+  border:1px solid #d6c05d;
+}
+.pagination ul > .active > a:hover,
+.pagination ul > .active > span:hover {
+  background: #d6c05d;
+  border:1px solid #d6c05d;
+}
+.pagination ul > li > a:hover{
+  color:#d6c05d;
+}
+
+.pullquote-left {
+	border-left:5px solid #d6c05d;
+}
+
+.pullquote-right {
+	border-right:5px solid #d6c05d;
+}
+
+.pricing-box-wrap.special .pricing-heading {
+	background: #d6c05d;
+}
+
+/* portfolio */
+ul.portfolio-categ.filter li.active a {
+  color:#d6c05d;
+}
+
+/* portfolio */
+ul.team-categ.filter li.active a {
+  color:#d6c05d;
+}
+
+.grid figcaption {
+	background: #d6c05d;
+}
+
+/* footer */
+footer a:hover {
+	color:#d6c05d;
+}
+footer ul.link-list li a:hover {
+	color:#d6c05d;
+}

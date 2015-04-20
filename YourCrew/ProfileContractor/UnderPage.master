@@ -1,0 +1,480 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UnderPage.master.cs"  Inherits="ProfileContractor_UnderPage" %>
+
+<!doctype html>
+<!--[if gt IE 9]><!-->
+<html xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!--<![endif]-->
+<head id="Head1" runat="server">
+    <link rel="alternate" hreflang="es" href="http://es.Crew's.com/" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-script-type" content="text/javascript">
+    <title>
+        <asp:ContentPlaceHolder ID="Title" runat="server"></asp:ContentPlaceHolder>
+    </title>
+    <link href="http://Crew's.com/rss.xml" rel="alternate" title="Latest gigs" type="application/rss+xml">
+    <link href="https://plus.google.com/118196075333057498139/" rel="publisher">
+
+    <link href="../css/application-6d7d83905bb43abbfee0852bd5fc1ed7.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="../css/marketplace-73bf33e58132ddb1ea441d6d9308c709.css" media="all" rel="stylesheet" type="text/css" />
+
+    <link href="http://Crew's.com" rel="canonical" />
+    <script src="../js/modernizr.custom.70647-c73301c7e61c7be315b9cb4943c67188.js" type="text/javascript"></script>
+    <script src="../js/baaa_jquery-b1495e921df85d990ebbe74a535b2f47.js" type="text/javascript"></script>
+    <script src="../js/baaa_core-cc822c88c5acb2fb04afaa459133ca7d.js" type="text/javascript"></script>
+
+
+    <!-- Bootstrap--->
+
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="../css/flexslider.css" rel="stylesheet" />
+    <link href="../css/prettyPhoto.css" rel="stylesheet" />
+    <link href="../css/camera.css" rel="stylesheet" />
+    <link href="../css/jquery.bxslider.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <!-- Theme skin -->
+    <link id="colors" href="../color/green.css" rel="stylesheet" />
+    <!-- color picker -->
+    <link rel="stylesheet" href="../colorpicker/css/colorpicker.css" type="text/css" />
+    <!-- boxed bg -->
+    <link id="bodybg" href="../boxedbg/bg1.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="body-home">
+
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="Scriptmanager1" runat="server"></asp:ScriptManager>
+        <div id="main-wrapper" data-stellar-offset-parent="true">
+            <div class="mainHomeheader">
+                <div id="main-wrapper-header">
+                    <div class="main-flashes">
+                    </div>
+                    <header class="main-header">
+                        <div class="container-fluid">
+
+                            <a href="/" class="logo">Your Crew's logo</a>
+                            <div id="divUser" runat="server" visible="false">
+                                <nav class="main-nav main-nav-guest">
+                                    <ul>
+                                        <li><a href="#" class="js-gtm-event" data-gtm-action="black-nav" data-gtm-event="navigation" data-gtm-label="home"><i class="icon-2x icon-envelope-alt"></i></a></li>
+                                        <li><a href="../Default.aspx" class="js-gtm-event" data-gtm-action="black-nav" data-gtm-event="navigation" data-gtm-label="home">HOME</a></li>
+                                        <li id="lbtnFindCrew" runat="server" visible="false"><a href="../ContractorFilter.aspx?ct=0" data-gtm-action="black-nav" data-gtm-event="navigation" data-gtm-label="Find Contractor" rel="nofollow">Find Contractor</a></li>
+                                        <li id="lbtnMyJobs" runat="server" ><asp:LinkButton ID="btnMyJobs" runat="server" CssClass="js-gtm-event" OnClick="btnMyJobs_Click" Text="Settings">My Contract</asp:LinkButton></li>
+                                        <li id="lbtnPostJob" runat="server" visible="false"><a href="../ProfileHirer/PostJob.aspx" data-gtm-action="black-nav" data-gtm-event="navigation" data-gtm-label="Post Job Here" rel="nofollow">Post Job</a></li>
+                                        <li id="lbtnApplyJob" runat="server" visible="false"><a href="../ProfileContractor/FindJob.aspx" class="js-gtm-event" data-gtm-action="black-nav" data-gtm-event="navigation" data-gtm-label="Apply for Job Here" rel="nofollow">FIND Job</a></li>
+                                        <li><asp:LinkButton ID="lbtnUserName" runat="server" CssClass="js-gtm-event"></asp:LinkButton>
+                                        </li>
+                                        <li><asp:LinkButton ID="lbtnSettings" runat="server" CssClass="js-gtm-event" PostBackUrl="~/ProfileContractor/EditExperience.aspx" Text="Settings">Settings</asp:LinkButton></li>
+                                        <li><asp:LinkButton ID="lbtnLogout" runat="server" CssClass="js-gtm-event" data-gtm-action="black-nav" data-gtm-label="Logout" data-gtm-event="navigation" OnClick="lbtnLogout_Click" Text="Logout">Logout</asp:LinkButton></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div id="divVisitor" runat="server" visible="false">
+                                <nav class="main-nav main-nav-guest">
+                                    <ul>
+                                        <li><a href="../Default.aspx" class="js-gtm-event" data-gtm-action="black-nav" data-gtm-event="navigation" data-gtm-label="home">HOME</a></li>
+                                        <li><a href="#" class="js-open-popup-join js-gtm-event js-gtm-event" data-gtm-action="black-nav" data-gtm-event="navigation" data-gtm-label="Post Job Here" rel="nofollow">FIND WORK</a></li>
+                                        <li><a href="#" class="js-open-popup-join js-gtm-event js-gtm-event" data-gtm-action="black-nav" data-gtm-event="navigation" data-gtm-label="start Job Here " rel="nofollow">FIND CONTRACTOR</a></li>
+                                        <li><a href="#" class="js-open-popup-login js-gtm-event" data-gtm-action="black-nav" data-gtm-label="sign in" data-gtm-event="navigation">Log IN</a></li>
+                                        <li><a href="#" class="btn-green js-open-popup-join js-gtm-event" data-gtm-action="black-nav" data-gtm-label="join" data-gtm-event="navigation">Sign Up <sup style="color: white;">It's free !</sup></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </header>
+
+                    <nav class="main-category-search">
+                        <div class="inner cf">
+                            <%--<form accept-charset="UTF-8" action="/gigs/search" id="search-form" method="get">--%>
+                            <div class="wrap-search">
+                                <asp:DropDownList ID="ddlCategory" runat="server" CssClass="dropdown input-medium" DataSourceID="SqlDataSource1" DataTextField="CategoryName" DataValueField="CategoryID">
+                                     </asp:DropDownList>
+                                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CrewsdbConnectionString %>" SelectCommand="SELECT [CategoryID], [CategoryName] FROM [CategoryMaster] ORDER BY [CategoryID]"></asp:SqlDataSource>
+                                <%--<input id="query" maxlength="40" name="query" placeholder="Search for categories" type="text" />--%>
+                                <asp:ImageButton ID="ibtnSearch" runat="server" ImageUrl="../images/btn-search-icon-lrg-64c37a7ce6c17e45188981e1c6565f10.png" AlternateText="Go" OnClick="ibtnSearch_Click" noformvalidate />
+                            </div>
+                            <label for="query" class="wrap-search-caption">SEARCH YOUR CREW'S</label>     <%--</form>--%>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- Login in From --->
+                <section class="popup popup-grey popup-user-forms popup-user-login ">
+
+                    <div class="popup-content">
+
+                        <a href="#" class="btn-close" rel="nofollow"></a>
+                        <%--<asp:UpdatePanel ID="updatepanleSignin" runat="server" ><ContentTemplate>--%>
+                        <!-- login form begin -->
+                        <div class="popup-content-login" style="display: block;">
+
+                            <div class="main-message">
+
+
+                                <a href="#" class="fbconnect_login_button btn-standard-lrg btn-fb-blue" id="A1" tabindex="5" rel="nofollow">Sign In Using Facebook</a>
+                                <small>Not a member yet? <a href="http://Crew's.com/join" class="js-open-popup-join">Register now</a> &mdash; it&#x27;s fun and easy!</small>
+
+                            </div>
+
+                            <div class="popup-form">
+
+                                <div style="margin: 0; padding: 0; display: inline">
+                                    <input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="b/DGHZZFlzmdL6sLA9U3Rrm7x6i7QOa4ZsrtkauNRCs=" />
+                                </div>
+
+
+
+                                <div class="form-errors">
+                                </div>
+
+                                <div class="form-row cf multi-rows-label">
+                                    <div class="label-wrap">
+                                        <label for="txtUserName">Email / Username</label>
+                                    </div>
+                                    <div class="input-wrap">
+                                        <input id="txtUserName" class="input-large" runat="server" maxlength="30" name="user_session[login]" size="30" tabindex="1" type="text" />
+                                    </div>
+                                </div>
+
+                                <div class="form-row cf">
+                                    <div class="label-wrap">
+                                        <label for="txtPassword">Password</label>
+                                    </div>
+                                    <div class="input-wrap">
+                                        <input id="txtPassword" runat="server" name="user_session[password]" tabindex="2" type="password" />
+                                    </div>
+                                </div>
+
+                                <div class="form-row cf">
+
+                                    <div class="label-wrap">&nbsp;</div>
+                                    <div class="input-wrap">
+                                        <label class="fake-check-grey check-text" for="user_session_remember_me">
+                                            <input id="user_session_remember_me" name="user_session[remember_me]" type="checkbox" tabindex="4" value="1" />
+                                            <span class="chk-img"></span>
+                                            Remember me
+                                        </label>
+                                        <br />
+                                        <asp:Label ID="lblSignInError" runat="server"></asp:Label>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-row-buttons">
+
+                                    <span class="lf">
+                                        <a href="#" class="js-btn-forgotpw" rel="nofollow">Forgot Password?</a>
+                                    </span>
+                                    <asp:Button ID="btnLogin" runat="server" OnClick="btnLogin_Click" CssClass="btn-standard btn-green" name="commit" TabIndex="4" type="submit" value="Login" Text="Login" novalidate/>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <%--  </ContentTemplate></asp:UpdatePanel>--%>
+                        <!-- login form end -->
+
+                        <!-- forgot pw form begin -->
+                        <div class="popup-content-forgotpw" style="">
+
+                            <div class="main-message">
+
+                                <h2>Reset Password</h2>
+                                <h3 style="padding-bottom: 0px">Enter the email you used in your Crew's profile. A password reset link will be sent to you by email.</h3>
+
+                            </div>
+
+                            <div class="popup-form">
+
+                                <div style="margin: 0; padding: 0; display: inline">
+
+                                    <div class="form-errors">
+                                    </div>
+
+                                    <div class="form-row cf multi-rows-label">
+                                        <div class="label-wrap">
+                                            <label for="email">Enter email address</label>
+                                        </div>
+                                        <div class="input-wrap">
+                                            <input id="txtForgetEmail" runat="server" name="email" type="text" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row-buttons">
+
+                                        <a href="#" class="js-btn-signin lf">Back to Sign In</a>
+                                        <asp:Button ID="btnForgetPassword" CssClass="btn-standard-lrg" OnClick="btnForgetPassword_Click" name="commit" type="submit" value="Submit" runat="server" Text="SUBMIT" />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- forgot pw form end -->
+
+                    </div>
+
+                </section>
+
+
+                <%--            <div class="main-content">--%>
+                <section class="popup-how-it-works">
+
+                    <header>
+                        <ul>
+                            <li>
+                                <span class="bot-hider"></span>
+                                <a href="#" class="js-howitworks-sell">How To Sell</a>
+                            </li>
+                            <li class="sel">
+                                <span class="bot-hider"></span>
+                                <a href="#" class="js-howitworks-buy">How To Buy</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn-close">Close</a>
+                    </header>
+
+                    <div class="popup-content">
+
+                        <div class="content-how-to-buy js-how-to-buy gallery">
+
+                            <div class="js-gallery-box">
+                                <div class="js-coll-slider">
+                                </div>
+                            </div>
+
+                            <a class="js-gallery-nav nav-prev inactive"><span>Previous</span></a>
+                            <a class="js-gallery-nav nav-next"><span>Next</span></a>
+
+                            <div class="js-gallery-marker">
+                                <span class="sel">&nbsp;</span>
+                                <span>&nbsp;</span>
+                                <span>&nbsp;</span>
+                                <span>&nbsp;</span>
+                            </div>
+
+                            <div class="slide-button">
+                                <a href="#" class="btn-standard btn-green js-open-popup-join">Get Started</a>
+                            </div>
+
+                        </div>
+
+                        <div class="content-how-to-sell js-how-to-sell gallery">
+
+                            <div class="js-gallery-box">
+                                <div class="js-coll-slider">
+                                </div>
+                            </div>
+
+                            <a class="js-gallery-nav nav-prev inactive"><span>Previous</span></a>
+                            <a class="js-gallery-nav nav-next"><span>Next</span></a>
+
+                            <div class="js-gallery-marker">
+                                <span class="sel">&nbsp;</span>
+                                <span>&nbsp;</span>
+                                <span>&nbsp;</span>
+                                <span>&nbsp;</span>
+                            </div>
+
+                            <div class="slide-button">
+                                <a href="#" class="btn-standard btn-green js-open-popup-join">Create a Gig</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+                <%--<div class="error-container" style="display:inline; visibility:visible; z-index:100; text-align:center;" ><p class="msg-error"><asp:Label ID="lblError" runat="server" CssClass="msg-error" Text="Hello"></asp:Label></p></div>--%>
+                <asp:ContentPlaceHolder ID="Slider" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            <%--<div class="page-container">
+                <div class="container">
+                    <div class="row-fluid">
+                        <div class="span1">
+                            <a href="Result.aspx?cid=1" class="text-success"><b>House</b></a>
+                        </div>
+                        <div class="span1">
+                            <a href="Result.aspx?cid=2">Outdoor</a>
+                        </div>
+                        <div class="span1">
+                            <a href="Result.aspx?cid=3">Health</a>
+                        </div>
+                        <div class="span1">
+                            <a href="Result.aspx?cid=4">Auto</a>
+                        </div>
+                        <div class="span1">
+                            <a href="Result.aspx?cid=5">Education</a>
+                        </div>
+                        <div class="span1">
+                            <a href="Result.aspx?cid=6">Technology</a>
+                        </div>
+                        <div class="span1">
+                            <a href="Result.aspx?cid=7">Food</a>
+                        </div>
+                        <div class="span1">
+                            <a href="Result.aspx?cid=8">Electrician</a>
+                        </div>
+                        <div class="span1">
+                            <a href="Result.aspx?cid=9">Property</a>
+                        </div>
+                        <div class="span1">
+                            <a href="Result.aspx?cid=10"></a>
+                        </div>
+                        <div class="span1">
+                            <a href="Result.aspx?cid=11"></a>
+                        </div>
+                        <div class="span1">
+                            <a href="Result.aspx?cid=12">Others</a>
+                        </div>
+                    </div>
+                </div>
+            </div>--%>
+            <asp:ContentPlaceHolder ID="Content" runat="server"></asp:ContentPlaceHolder>
+
+            <section class="mp-container mp-footer-search container-fluid">
+                <div class="row-fluid">
+                    <div class="span9 span-centered">
+                        <%--<form accept-charset="UTF-8" action="/gigs/search" id="footer_search" method="get">
+                            <div style="margin: 0; padding: 0; display: inline">
+                                <input name="utf8" type="hidden" value="&#x2713;" />
+                            </div>
+                            <div class="large-search">
+                                <input id="Text1" maxlength="40" name="query" placeholder="FIND AMAZING GIGS, START HERE" type="text" value="" />
+                                <input type="image" src="images/btn-search-icon-lrg-64c37a7ce6c17e45188981e1c6565f10.png" alt="Go" />
+
+                            </div>
+                        </form>--%>
+                    </div>
+                </div>
+            </section>
+            <section class="mp-container mp-footer-logos">
+                <a href="#">Crew's News</a>
+            </section>
+            <%--</div>--%>
+
+            <footer class="main-footer cf">
+                <div class="footer-sweaty">
+                    <p class="js-gtm-event" data-gtm-action="hot-sweaty" data-gtm-label="top_menu_underlink" data-gtm-event="footer">Introducing Our Latest Super Seller -. <a href="http://blog.Crew's.com/2013/10/01/super-seller-ozzieuk-conquering-the-world-from-a-tiny-little-town/?utm_source=pr_ct&utm_term=s09976">Read His Story Here</a>. </p>
+                </div>
+
+                <div class="footer-inner">
+
+                    <div class="footer-side-l">
+
+
+                        <h5>Let's Connect</h5>
+                        <div class="">
+                            <span>For live updates <b>@YourCrews</b></span>
+                            <br />
+                        </div>
+                        <br />
+                        <div class="footer-social cf">
+                            <a href="http://twitter.com/Crew's" class="social social-tw" target="blank"><span>Crew's on Twitter</span></a>
+                            <a href="http://www.facebook.com/Crew's" class="social social-fb" target="blank"><span>Crew's on Facebook</span></a>
+                            <a href="http://www.pinterest.com/Crew's" class="social social-pi" target="blank"><span>Crew's on Pinterest</span></a>
+                            <a href="http://www.linkedin.com/company/Crew's.com" class="social social-li" target="blank"><span>Crew's on LinkedIn</span></a>
+                            <a href="http://instagram.com/fiverrhq" class="social social-in" target="blank"><span>Crew's on Instagram</span></a>
+                        </div>
+
+                    </div>
+
+                    <div class="footer-side-r">
+                        <a href="#" class="logo">Your Crew's Logo</a>
+                        <p>&copy;Your Crew's  2010 - 2013</p>
+                        <p>
+                            About <b>Your Crew's</b>
+                        </p>
+                    </div>
+
+                    <div class="footer-mid">
+                        <div class="row-fluid">
+                            <div class="span4">
+                                <ul>
+                                    <li>
+                                        <h5>Media &amp; Press</h5>
+                                    </li>
+                                    <li><a href="#">Your Crew's in the Media</a></li>
+                                    <li><a href="#">Press Kit</a></li>
+                                    <!-- <li></li> -->
+                                </ul>
+                            </div>
+                            <div class="span4">
+                                <ul>
+                                    <li>
+                                        <h5>General</h5>
+                                    </li>
+                                    <li><a href="#">Your Crew's Directory</a></li>
+                                    <li><a href="#">Levels</a></li>
+                                    <!-- <li></li> -->
+                                    <li><a href="#" target="_blank">The Crew's Blog</a></li>
+                                    <li><a href="#">Terms of Service</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="span4">
+                                <ul>
+                                    <li>
+                                        <h5>Get Help</h5>
+                                    </li>
+                                    <li><a href="#">Customer Support</a></li>
+                                    <li><a href="#" target="_blank">Crew's Forum</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </form>
+    <script src="../js/application-91499965d04559445fb3f2b0b4df5b56.js" type="text/javascript"></script>
+    <script src="../js/categories-1fe6d3bb7e383d333c6fe8d13e39b78a.js" type="text/javascript"></script>
+    <script src="../js/marketplace-347c1799b48fa9cf2d2c53e372de8ef8.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="http://cdn.ucb.org.br/Scripts/formValidator/js/languages/jquery.validationEngine-en.js"
+        charset="utf-8"></script>
+    <script type="text/javascript" src="http://cdn.ucb.org.br/Scripts/formValidator/js/jquery.validationEngine.js"
+        charset="utf-8"></script>
+    <link href="../js/ValidationEngine.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+        $(function () {
+            $("#form1").validationEngine('attach', { promptPosition: "topRight" });
+        });
+    </script>
+    <script type="text/javascript">
+        function DateFormat(field, rules, i, options) {
+            var regex = /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
+            if (!regex.test(field.val())) {
+                return "Please enter date in dd/MM/yyyy format."
+            }
+        }
+    </script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <script src="../js/bootstrap.js"></script>
+
+    <script src="../js/modernizr.custom.js"></script>
+    <script src="../js/toucheffects.js"></script>
+    <script src="../js/google-code-prettify/prettify.js"></script>
+    <script src="../js/jquery.bxslider.min.js"></script>
+
+    <script src="../js/jquery.prettyPhoto.js"></script>
+    <script src="../js/portfolio/jquery.quicksand.js"></script>
+    <script src="../js/portfolio/setting.js"></script>
+    <script src="../js/jquery.tweet.js"></script>
+
+    <script src="../js/jquery.flexslider.js"></script>
+    <script src="../js/animate.js"></script>
+    <script src="../js/inview.js"></script>
+    <script src="../js/validate.js"></script>
+    <script src="../js/custom.js"></script>
+
+    <script src="../js/jquery.cookie.js"></script>
+    <script src="../colorpicker/js/colorpicker.js"></script>
+    <script src="../js/optionspanel.js"></script>
+
+</body>
+</html>

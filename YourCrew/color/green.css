@@ -1,0 +1,260 @@
+/*
+Blue accent color
+
+*/
+a:hover {
+	color:#509339;
+}
+#inner-headline ul.breadcrumb li a {
+	color:#509339;
+}
+
+/* heading */
+h1 span.colored, h2 span.colored,h3 span.colored,h4 span.colored,h5 span.colored,h6 span.colored {
+	color:#509339;
+}
+
+/* menu */
+.navbar nav ul.nav li.dropdown ul.dropdown-menu li a:active,.navbar nav ul.nav li.dropdown ul.dropdown-menu li a:focus {
+  background: #509339;
+}
+ul.topmenu li a:hover {
+	color:#509339;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  background: #509339;
+}
+
+header ul.nav .dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a, 
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:hover {
+  background: #509339;
+}
+
+/* slider */
+.camera_prev > span:before {
+  background: #509339;
+}
+.camera_next > span:before {
+  background: #509339;
+}
+
+/* parallax c slider */
+.da-arrows span.da-arrows-prev:before {
+  background: #509339;
+}
+.da-arrows span.da-arrows-next:before {
+  background: #509339;
+}
+.da-slide .da-link:hover{
+	background: #509339;
+	border: 4px solid #509339;
+}
+
+.da-dots span{
+	background: #509339;
+}
+
+
+/* form */
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: #509339;
+}
+
+form#contactform .validation {
+	color:#509339;
+}
+#sendmessage {
+	border:1px solid #509339;
+
+}
+
+/* tabs */
+div.tabs  ul.nav-tabs li.active a {
+	border-top: 2px solid #509339;
+	color:#509339;
+}
+div.tabbable.tabs-left  ul.nav-tabs li.active a {
+	border-left: 2px solid #509339;
+		color:#509339;
+}
+div.tabbable.tabs-right  ul.nav-tabs li.active a {
+	border-right: 2px solid #509339;
+		color:#509339;
+}
+
+.accordion-heading a.active,.accordion-heading a.active i {
+	color:#509339;
+}
+
+/* icon */
+[class^="icon-"].active {
+	color:#509339;
+}
+[class^="icon-"]:hover {
+	color:#509339;
+}
+
+a i.icon-bglight:hover,
+a i.icon-bgdark:hover {
+  background: #509339;
+}
+i.icon-bglight.active {
+  background: #509339;
+}
+
+i.icon-bgdark.active {
+  background: #509339;
+}
+ul.styledlist li:before {
+	color:#509339;
+}
+
+/* logo icon */
+.logo h1 [class^="icon-"] {
+	color:#509339;
+}
+
+.footer_logo h3 [class^="icon-"] {
+	color:#509339;
+}
+
+/* CTA */
+.cta-text h2 span {
+	color:#509339;
+}
+
+/*-- button -- */
+.btn-theme {
+  border:1px solid #509339;
+  background: #509339;
+}
+
+/* content */
+.box:hover .text h4 {
+	color:#509339;
+}
+#inner-headline ul.breadcrumb li a:hover {
+	color:#509339;
+}
+
+a.thumbnail:hover,
+a.thumbnail:focus {
+  border-color: #509339;
+}
+
+/* blog */
+article .post-heading h3 a {
+	text-decoration:none;
+	color:#509339;
+}
+
+.post-entry a.readmore:hover {
+	color:#509339;
+}
+
+ul.cat li a:hover, ul.folio-detail li a:hover {
+	color:#509339;
+}
+
+.meta-post a,.meta-post ul li i {
+  color: #509339;
+}
+
+
+.meta-bottom li a:hover {
+	color:#509339;
+}
+
+#pagination a:hover {
+  background: #509339;
+}
+
+
+/* widgets */
+ul.popular li a {
+	color:#509339;
+}
+
+/* component */
+.pagination ul > .active > a,
+.pagination ul > .active > span {
+  background: #509339;
+  border:1px solid #509339;
+}
+.pagination ul > .active > a:hover,
+.pagination ul > .active > span:hover {
+  background: #509339;
+  border:1px solid #509339;
+}
+.pagination ul > li > a:hover{
+  color:#509339;
+}
+
+.pullquote-left {
+	border-left:5px solid #509339;
+}
+
+.pullquote-right {
+	border-right:5px solid #509339;
+}
+
+.pricing-box-wrap.special .pricing-heading {
+	background: #509339;
+}
+.pricing-box-wrap.free .pricing-heading {
+	background: #222121;
+}
+
+.pricing-box-wrap.silver .pricing-heading {
+	background:#c1bcbc;
+}
+.pricing-box-wrap.gold .pricing-heading {
+	background: #f1ae24;
+}
+.pricing-box-wrap.platinum .pricing-heading {
+	background: #3086cf;
+}
+
+
+/* portfolio */
+ul.portfolio-categ.filter li.active a {
+  color:#509339;
+}
+
+/* portfolio */
+ul.team-categ.filter li.active a {
+  color:#509339;
+}
+
+.grid figcaption {
+	background: #509339;
+}
+
+/* footer */
+footer a:hover {
+	color:#509339;
+}
+footer ul.link-list li a:hover {
+	color:#509339;
+}

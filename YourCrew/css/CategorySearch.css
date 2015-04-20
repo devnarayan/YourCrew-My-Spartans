@@ -1,0 +1,22 @@
+﻿body {
+}
+
+.mybg
+{
+    background-image:url('../img/category/bg/cat1.jpg');
+    background-size:cover;
+    background-repeat:repeat;
+    height:600px;
+}
+.mybg h1
+{
+   text-align:center;
+  text-shadow: 2px 2px #1db963;
+}
+
+.mybg2
+{
+    background-image:url('../images/grass.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+}

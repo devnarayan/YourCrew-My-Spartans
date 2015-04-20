@@ -1,0 +1,78 @@
+        .stage {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+
+            height: 100%;
+            overflow: hidden;
+            z-index: 100;
+        }
+        .far-clouds {
+	background-color: transparent;
+	background-image: url(../images/far-clouds.png);
+	background-repeat: repeat-x;
+	background-position: 305px 0px;
+	
+        }
+        .near-clouds {
+            background: transparent url(../images/near-clouds.png) 305px 50px repeat-x;
+			background-size:60%;
+        }
+        .mainContent{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 101;    
+        }
+.containerSlide  {
+	min-width:100%;
+	padding-top:359px;
+	position:relative;
+	width:100%;
+    text-align:center;
+	background-repeat: repeat-x;
+	background-position: 0 0;
+	background-size:100% 100%;
+}
+.mainContent {
+	width:100%;
+	margin:0px auto;
+	overflow: hidden;
+	height:100%;
+}
+.OuterWidthSlide{
+width:100%;
+height:100%;
+}
+#sliderOuter {
+    margin-top:0px;
+    margin:0 !important;
+    padding:0;
+    z-index:2330;
+	background-color: #99d9ea;
+	background-image: url(../images/grass.png);
+	background-position: center bottom;
+	background-repeat: repeat-x;
+}
+.mainHomeheader {
+	background-color: #99d9ea;
+}
+
+
+
+/* -----------Category Slide----------------*/
+
+ .boxgrid{background-image:none;background-repeat:repeat;background-attachment:scroll;
+                 background-position:0 0;float:left;border:solid 6px #e2d9c0;
+                 overflow:hidden;position:relative;margin-right:10px;}
+                 
+ .boxgrid img{position:absolute;top:0;left:0;border:0}
+ .boxcaption{color:#fff;float:left;position:relative; background:rgb(51,152,182);background:rgba(51,152,182,.9);height:100px;width:auto;
+                        padding-top:12px;padding-left:18px}
+                        
+.boxgrid:active{border-top-width:7px;border-bottom-width:5px}
+.captionfull .boxcaption{top:260px;left:0;text-shadow:none !important}
+.boxcaption .caption{font-size:14px;position:absolute;bottom:30px}
+.boxcaption .descr{display: none}
+.boxcaption .title{color:#fff;font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;display:block;text-shadow:none}

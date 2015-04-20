@@ -1,0 +1,150 @@
+.noti_Container {
+    position: relative; /* This is crucial for the absolutely positioned element */
+    width: 120px;
+    height: 26px;
+    margin-left: 10px;
+    text-align: right;
+}
+
+.noti_Container1 {
+    position: relative; /* This is crucial for the absolutely positioned element */
+    width: 140px;
+    height: 26px;
+    text-align: right;
+    margin-left: 10px;
+}
+
+.noti_Container2 {
+    position: relative; /* This is crucial for the absolutely positioned element */
+    width: 110px;
+    text-align: right;
+    height: 26px;
+    margin-left: 10px;
+}
+
+.noti_bubble {
+    position: absolute; /* This breaks the div from the normal HTML document. */
+    top: -6px;
+    right: -6px;
+    padding: 1px 2px 1px 2px;
+    background-color: red; /* you could use a background image if you'd like as well */
+    color: white;
+    width: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.55em;
+    /* The following is CSS3, but isn't crucial for this technique to work. */
+    /* Keep in mind that if a browser doesn't support CSS3, it's fine! They just won't have rounded borders and won't have a box shadow effect. */
+    /* You can always use a background image to produce the same effect if you want to, and you can use both together so browsers without CSS3 still have the rounded/shadow look. */
+    border-radius: 30px;
+    box-shadow: 1px 1px 1px gray;
+}
+
+
+
+
+a.verify
+{
+     outline: none;
+}
+
+    a.verify strong {
+        line-height: 30px;
+    }
+
+    a.verify:hover {
+        text-decoration: none;
+    }
+
+    a.verify span {
+        z-index: 10000;
+        display: none;
+        padding: 14px 20px;
+        margin-top: -30px;
+        margin-left: 28px;
+        text-align:justify !important;
+        width: 300px;
+        line-height: 16px;
+    }
+
+    a.verify:hover span {
+        display: inline;
+        position: absolute;
+        text-align:left;
+        z-index:10000;
+        color: #111;
+        border: 1px solid #DCA;
+        background: #fffAF0;
+    }
+
+.callout {
+    z-index: 20000;
+    position: absolute;
+    top: 10px;
+    border: 0;
+    left: -12px;
+}
+
+/*CSS3 extras*/
+                                           
+a.verify span {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-box-shadow: 5px 5px 8px #CCC;
+    -webkit-box-shadow: 5px 5px 8px #CCC;
+    box-shadow: 5px 5px 8px #CCC;
+}
+
+a.verifyPlan
+{
+     outline: none;
+}
+
+    a.verifyPlan strong {
+        line-height: 30px;
+    }
+
+    a.verifyPlan:hover {
+        text-decoration: none;
+    }
+
+    a.verifyPlan span {
+        z-index: 10000;
+        display: none;
+        padding: 14px 20px;
+        margin-top: -30px;
+        margin-left: 28px;
+        text-align:justify !important;
+        width: 300px;
+        line-height: 16px;
+    }
+
+    a.verifyPlan:hover span {
+        display: inline;
+        position: absolute;
+        text-align:left;
+        z-index:10000;
+        color: #111;
+        border: 1px solid #DCA;
+        background: #fffAF0;
+    }
+
+.callout {
+    z-index: 20000;
+    position: absolute;
+    top: 10px;
+    border: 0;
+    left: -12px;
+}
+
+/*CSS3 extras*/
+                                           
+a.verifyPlan span {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-box-shadow: 5px 5px 8px #CCC;
+    -webkit-box-shadow: 5px 5px 8px #CCC;
+    box-shadow: 5px 5px 8px #CCC;
+}
